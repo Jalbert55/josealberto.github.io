@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  padding-bottom: 0%;
+  text-align: center;
+}
+
+.splash-screen {
+  position: fixed; /* Asegúrate de que cubra toda la pantalla */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black; /* Color de fondo mientras se carga el video */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999; /* Asegúrate de que esté por encima de otros elementos */
+}
+
+.splash-video {
+  width: 100%; /* Ocupa el 100% del ancho de la pantalla */
+  height: 100%; /* Ocupa el 100% de la altura de la pantalla */
+  object-fit: cover; /* Asegura que el video cubra todo el contenedor */
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: #ffffff;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+a:hover {
+  text-decoration: underline;
+}

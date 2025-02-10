@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 798.94 572.03">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 116.03px;
+      }
+
+      .cls-1, .cls-2 {
+        font-family: MarcellusSC-Regular, 'Marcellus SC';
+      }
+
+      .cls-3 {
+        font-family: Orbitron-Bold, Orbitron;
+      }
+
+      .cls-3, .cls-4 {
+        font-weight: 700;
+      }
+
+      .cls-5 {
+        font-family: Yellowtail, Yellowtail;
+      }
+
+      .cls-6, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-6, .cls-2, .cls-7 {
+        stroke: #fff;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-4 {
+        font-family: PerpetuaTitlingMT-Bold, 'Perpetua Titling MT';
+      }
+
+      .cls-8 {
+        letter-spacing: 0em;
+      }
+
+      .cls-9 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-2 {
+        font-size: 193.39px;
+        stroke-width: 2px;
+      }
+
+      .cls-7 {
+        fill: none;
+        stroke-width: 10px;
+      }
+
+      .cls-10 {
+        font-size: 38.68px;
+      }
+    </style>
+  </defs>
+  <g id="Capa_3">
+    <g>
+      <text class="cls-6" transform="translate(24.71 456.06)"><tspan class="cls-1"><tspan x="0" y="0">JOSÉ ALBE</tspan><tspan class="cls-9" x="520.96" y="0">R</tspan><tspan class="cls-8" x="587.82" y="0">T</tspan><tspan x="655.98" y="0">O</tspan></tspan><tspan class="cls-10"><tspan class="cls-3" x="101.19" y="46.41">DEVELOPER &amp;</tspan><tspan class="cls-5" x="433.97" y="46.41"> </tspan><tspan class="cls-4" x="442" y="46.41">DESIGNER</tspan></tspan></text>
+      <polygon class="cls-7" points="471.3 5 574.03 105.13 574.03 246.74 471.3 346.87 326.02 346.87 223.29 246.74 223.29 105.13 326.02 5 471.3 5"/>
+      <text class="cls-2" transform="translate(326.15 237.85)"><tspan x="0" y="0">JA</tspan></text>
+    </g>
+  </g>
+</svg>
