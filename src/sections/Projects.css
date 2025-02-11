@@ -3,7 +3,8 @@
 }
 
 .projects-container {
-    height: 100vh;
+    min-height: 100vh; /* Altura mínima del 100% del viewport */
+    height: fit-content; /* Se ajusta al contenido si es mayor que min-height */
     padding: 50px;
     text-align: center;
     background-color: #f5f7fa;

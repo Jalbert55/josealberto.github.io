@@ -3,8 +3,8 @@ import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { Container, Engine, ISourceOptions, MoveDirection, OutMode } from "@tsparticles/engine"; // Importa los tipos adecuados
 import { loadSlim } from "@tsparticles/slim";
 import "./App.css";
-import splashVideo from "./assets/SplashScreen.mp4";
-import splashVideoM from "./assets/SplashScreenM.mp4";
+import splashVideo from "./assets/SplashScreen.webm";
+import splashVideoM from "./assets/SplashScreenM.webm";
 import Sidebar from "./components/Sidebar";
 import Home from "./sections/Home";
 import Projects from "./sections/Projects";
