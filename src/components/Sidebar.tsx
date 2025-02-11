@@ -3,16 +3,24 @@ import { Link } from 'react-scroll';
 import './Sidebar.css';
 import DecryptedText from '../components/DecryptedText';
 
-const sections = ["home", "projects", "contact"];
+// Diccionario de traducción
+const sectionsMap: { [key: string]: string } = {
+    inicio: "home",
+    proyectos: "projects",
+    contacto: "contact"
+};
+
+// Lista de secciones en español
+const sections = Object.keys(sectionsMap);
 
 const Sidebar: React.FC = () => {
-    const [activeSection, setActiveSection] = useState<string>("home");
+    const [activeSection, setActiveSection] = useState<string>("inicio");
 
     useEffect(() => {
         const handleScroll = () => {
-            let currentSection = "home"; // Por defecto
-            for (const section of sections) {
-                const el = document.getElementById(section);
+            let currentSection = "inicio"; // Por defecto
+            for (const section in sectionsMap) {
+                const el = document.getElementById(sectionsMap[section]);
                 if (el) {
                     const rect = el.getBoundingClientRect();
                     if (rect.top >= 0 && rect.top < window.innerHeight / 2) {
@@ -34,7 +42,7 @@ const Sidebar: React.FC = () => {
                 {sections.map((section) => (
                     <li key={section}>
                         <Link 
-                            to={section} 
+                            to={sectionsMap[section]} // Usa el ID en inglés
                             smooth={true} 
                             duration={500} 
                             className={`menu-links ${activeSection === section ? "active" : ""}`}

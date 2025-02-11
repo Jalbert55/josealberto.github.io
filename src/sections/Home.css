@@ -32,6 +32,12 @@
     height: auto;
 }
 
+@media (min-width: 1051px) {
+    .home-container {
+        padding-left: 10%;
+    }
+}
+
 /* RESPONSIVE: En pantallas pequeñas, el Lottie se pone encima del texto */
 @media (max-width: 1050px) {
     .home-container {
@@ -46,5 +52,44 @@
     .lottie-container {
         order: 0; /* Lottie arriba */
         height: 70%;
+    }
+}
+
+/* RESPONSIVE: Ajustes adicionales para pantallas menores a 700px */
+@media (max-width: 700px) {
+    .home-container {
+        flex-direction: column;
+        text-align: center;
+        width: 100vw; /* Usa todo el ancho disponible */
+        height: auto; /* Permite que el contenido fluya */
+        padding: 10px; /* Reduce padding en móviles */
+    }
+
+    .text-container {
+        width: 90%; /* Ajuste del ancho del texto */
+        font-size: 14px; /* Reduce el tamaño de fuente */
+    }
+
+    .text-container h1 {
+        font-size: 1.8rem; /* Reduce tamaño del título */
+        line-height: 2.2rem; /* Mejora legibilidad */
+    }
+
+    .text-container p {
+        font-size: 1rem;
+        text-align: justify;
+    }
+
+    .lottie-container {
+        width: 100%;
+        height: 50%; /* Ajusta la altura del Lottie */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .lottie-container lottie-player {
+        max-width: 80%;
+        height: auto;
     }
 }

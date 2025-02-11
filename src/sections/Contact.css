@@ -1,3 +1,174 @@
 #contact {
     background-color: transparent;
 }
+
+.contact-container {
+    height: max-content;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f7fa;
+}
+
+.contact-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 900px;
+    gap: 30px;
+    color: black;
+}
+
+/* Estilos para el Formulario */
+.contact-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.contact-form button:hover {
+    background: #0056b3;
+}
+
+/* Estilos para la Información de Contacto */
+.contact-info {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info li {
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+.contact-info a { /* <-- Nuevo: Estilo para los enlaces */
+    color: blue; /* <-- Color azul para los enlaces */
+    text-decoration: none; /* <-- Quita la decoración por defecto */
+    display: flex; /* <-- Permite alinear icono y texto */
+    align-items: center; /* <-- Alinea verticalmente */
+}
+
+.contact-info svg { /* <-- Nuevo: Estilo para los iconos SVG */
+    margin-right: 8px; /* <-- Espacio entre el icono y el texto */
+}
+
+/* ... (resto del CSS) ... */
+
+.contact-buttons-list {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Para que los botones se comporten como lista */
+    flex-direction: column; /* Para que los botones se apilen verticalmente */
+    gap: 10px; /* Espacio entre botones */
+}
+
+.contact-button {
+    width: 100%; /* Ocupar todo el ancho disponible */
+    padding: 10px;
+    text-align: center; /* Centrar el texto */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra el icono y el texto horizontalmente */
+    gap: 5px; /* Espacio entre el icono y el texto */
+    transition: background-color 0.3s ease; /* Transición para el color de fondo */
+}
+
+.contact-button svg {
+    width: 20px;
+    height: 20px;
+}
+
+.email-button {
+    background-color: #007bff; /* Azul */
+    color: white;
+}
+
+.phone-button {
+    background-color: #28a745; /* Verde */
+    color: white;
+}
+
+.whatsapp-button {
+    background-color: #25d366; /* Verde Whatsapp */
+    color: white;
+}
+
+.behance-button {
+    background-color: #00acee; /* Azul claro Behance */
+    color: white;
+}
+
+.linkedin-button {
+    background-color: #0077b5; /* Azul LinkedIn */
+    color: white;
+}
+
+.contact-button:hover {
+    opacity: 0.8; /* Reduce la opacidad al pasar el mouse */
+}
+
+/* Responsivo para móviles */
+@media (max-width: 768px) {
+    .contact-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-form, .contact-info {
+        width: 100%;
+    }
+}
