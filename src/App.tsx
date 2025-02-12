@@ -16,8 +16,8 @@ const SplashScreen: React.FC<{ onFinish: () => void; videoSrc: string }> = ({
 }) => {
     return (
         <div className="splash-screen">
-            <video autoPlay muted onEnded={onFinish} className="splash-video">
-                <source src={videoSrc} type="video/mp4" />
+            <video autoPlay muted onEnded={onFinish} className="splash-video" preload="auto">
+                <source src={videoSrc} type="video/webm" />
                 Tu navegador no soporta videos.
             </video>
         </div>
