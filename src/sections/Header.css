@@ -1,0 +1,16 @@
+.header {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+}

@@ -55,6 +55,31 @@ a:hover {
   text-decoration: underline;
 }
 
+#boton-flotante {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+  transition: transform 0.3s ease; /* Transición para la animación */
+}
+
+#boton-flotante a {
+  display: block;
+  width: 200px; /* Tamaño del botón expandido */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  /* Otros estilos para tu botón */
+}
+
+/* Estilos para la posición inicial (retraído) */
+#boton-flotante.retraido {
+  transform: translateX(66%); /* Oculta el botón a la derecha */
+}
+
+/* Estilos para el efecto hover */
+#boton-flotante:hover {
+  transform: translateX(0); /* Muestra el botón completo */
+}
+
 @media (max-width: 700px) {
   .splash-video {
     object-fit: contain; /* Mantiene todo el contenido visible */

@@ -6,7 +6,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 80vh;
     width: 80vw;  /* 🔹 Ahora ocupa todo el ancho de la ventana */
     padding: 20px;
     gap: 20px;
@@ -91,5 +91,11 @@
     .lottie-container lottie-player {
         max-width: 80%;
         height: auto;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    .text-container h1{
+        color: black;
     }
 }

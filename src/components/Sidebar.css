@@ -55,8 +55,14 @@
 }
 
 /* Ocultar menú en dispositivos móviles */
-@media (max-width: 768px) {
+@media (max-width: 850px) {
     .sidebar {
         display: none;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    .menu-links {
+        color: black;
     }
 }

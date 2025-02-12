@@ -9,6 +9,8 @@ import Sidebar from "./components/Sidebar";
 import Home from "./sections/Home";
 import Projects from "./sections/Projects";
 import Contact from "./sections/Contact";
+import Header from "./sections/Header";
+import DownloadCV from "./assets/DownloadCV.png";
 
 const SplashScreen: React.FC<{ onFinish: () => void; videoSrc: string }> = ({
     onFinish,
@@ -141,7 +143,13 @@ const App: React.FC = () => {
                     )}
                     <div className="main-content" style={{ position: "relative", zIndex: 1 }}>
                         <Sidebar />
+                        <div id="boton-flotante" className="retraido">
+                            <a href="./assets/CV.pdf" download="CV.pdf" rel="noopener noreferrer">
+                                <img src={DownloadCV} alt="Download CV" />
+                            </a>
+                        </div>
                         <div className="content">
+                            <Header />
                             <Home />
                             <Projects />
                             <Contact />

@@ -111,3 +111,14 @@
     font-size: 0.9rem;
     color: #666;
 }
+
+@media (max-width: 768px) {
+    .project-card-wrapper:hover {
+        transform: none !important;
+    }
+
+    .project-image {
+        -webkit-filter: grayscale(0%);
+        filter: grayscale(0%);
+    }
+}
