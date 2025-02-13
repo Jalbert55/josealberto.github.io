@@ -144,7 +144,7 @@ const App: React.FC = () => {
                     <div className="main-content" style={{ position: "relative", zIndex: 1 }}>
                         <Sidebar />
                         <div id="boton-flotante" className="retraido">
-                            <a href="" download="./assets/CV.pdf" rel="noopener noreferrer">
+                        <a href="./assets/CV.pdf" download="CV.pdf" rel="noopener noreferrer">
                                 <img src={DownloadCV} alt="Download CV" />
                             </a>
                         </div>
