@@ -6,7 +6,6 @@ import { ToastContainer, toast } from "react-toastify"; // Importa react-toastif
 import "react-toastify/dist/ReactToastify.css";
 
 const Contact: React.FC = () => {
-  const form = useRef<HTMLFormElement>(null);
   const [isExpanded, setIsExpanded] = useState(false);
   const ref = useRef(null);
   const titleRef = useRef(null); // Referencia para el título
@@ -48,14 +47,14 @@ const Contact: React.FC = () => {
   const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
     // Tipo de evento correcto
     e.preventDefault();
-    if (!form.current) return;
+    console.log("Enviando correo...");
 
-    if (form.current) {
+    if (formRef.current) {
       try {
         const result = await emailjs.sendForm(
           "service_qc0nfsx",
           "template_ql5uzon",
-          form.current,
+          formRef.current,
           "3oOOhCaiC9V-9nsUI"
         );
 
@@ -65,6 +64,15 @@ const Contact: React.FC = () => {
           position: "top-center",
           autoClose: 3000, // Se oculta automáticamente después de 3 segundos
         });
+
+        // Restablecer el formulario
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          message: "",
+        });
+        
       } catch (error) {
         console.error("FAILED...", error);
         toast.error(
@@ -74,6 +82,9 @@ const Contact: React.FC = () => {
           }
         );
       }
+    }
+    else {
+      console.error("Formulario no encontrado");
     }
   };
 
